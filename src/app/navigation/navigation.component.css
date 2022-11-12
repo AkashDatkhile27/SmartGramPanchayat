@@ -1,0 +1,17 @@
+/* .spacer {
+    float: 1 1 auto;
+    position: absoute;
+    padding: 10;
+    }
+    .mat-toolbar-row, .mat-toolbar-single-row {
+        display: flex;
+        box-sizing: border-box;
+        padding:unset;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        white-space: nowrap;
+        /* height: 20%; */
+        /* justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;} */ 

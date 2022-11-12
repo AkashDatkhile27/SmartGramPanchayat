@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "panchayat-eb2d9": {
+      "hosting": {
+        "smartgram": [
+          "panchayat-eb2d9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "panchayat-eb2d9"
+  }
+}

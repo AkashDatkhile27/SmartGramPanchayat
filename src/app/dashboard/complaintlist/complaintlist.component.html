@@ -1,0 +1,35 @@
+<button class="btn pmd-btn-raised btn-primary btn-block pmd-ripple-effect" type="button" (click)="scheme()">New Scheme Application</button>
+<div class="col-md-20 mt-6" >
+   <h1 class="text-danger"> Complaints</h1>
+    <div class="card p-3 shadow" >
+        <div class="card-body">
+            <table class="table table-hover" align="center">
+                <thead>
+                  <tr class="thead-dark" >
+                    <th scope="col">Incident Date </th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Complaint Details</th>
+                    <th scope="col">Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let D of data ">
+                    <td >{{D.date}}</td>
+                    <td >{{D.name}}</td>
+                    <td>{{D.email}}</td>
+                    <td>{{D. address}}</td>
+                    <td>{{D.mno}}</td>
+                    <td >{{D.location}}</td>
+                    <td>{{D.complaintdetails}}</td>
+                    <td>{{D. Outcome}}</td>
+                   
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

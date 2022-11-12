@@ -1,0 +1,121 @@
+
+
+    <!-- <app-schemenav></app-schemenav>
+    <router-outlet></router-outlet> -->
+
+  <!-- <form class="text-center border border-light p-5">
+  <p class="h4 mb-4">Register</p>
+   -->
+  <!-- E-mail -->
+  <!-- <input type="email" class="form-control mb-4" placeholder="E-mail" name="email" [(ngModel)]="email"> -->
+  <!-- Password -->
+  <!-- <input type="password"  class="form-control" placeholder="Enter Password"
+    aria-describedby="defaultRegisterFormPasswordHelpBlock"
+    name="password" [(ngModel)]="password" >
+  <small  class="form-text text-muted mb-4">
+    At least 8 characters and 1 digit
+  </small> -->
+   <!-- Password -->
+   <!-- <input type="password" class="form-control" placeholder=" Confirm Password"
+   aria-describedby="defaultRegisterFormPasswordHelpBlock" name="cpassword" [(ngModel)]="cpassword"><br> -->
+  <!-- Phone number -->
+  <!-- <input type="text"  class="form-control" placeholder="Phone number"
+    aria-describedby="defaultRegisterFormPhoneHelpBlock">
+
+  <small  class="form-text text-muted mb-4">
+    Optional - for two-step authentication
+  </small><br>
+   -->
+  
+  <!-- Sign up button -->
+  <!-- <button mdbBtn color="info" block="true" class="my-4" (click)="register()">Register</button>
+  
+  <hr> -->
+  <!-- Terms of service -->
+  <!-- <p>By clicking
+    <em>Register</em> you agree to our
+    <a href="" target="_blank">terms of service</a>
+  </p>
+  </form> -->
+
+
+  <style>
+    /* Carousel styling */
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #introCarousel {
+        margin-top: -58.59px;
+      }
+    }
+
+  
+  </style> -->
+
+  
+
+  <!-- Carousel wrapper -->
+  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+    <!-- Indicators -->
+      
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-color: rgba(35, 38, 38, 0.91);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+             <section class="mb-5" >
+            
+                  <h1 class="mb-5 text-center" style="color:rgb(239, 238, 231);"><strong>Applicant Sign Up</strong></h1>
+                    
+                          <form>
+                            <div class="row d-flex justify-content-start">
+                              <div class="col-md-6">
+
+                             <!-- Email input -->
+                            <div class="form-outline mb-4 ">
+                            <input type="email" id="form3Example3" class="form-control mb-5 text-start" name="email" [(ngModel)]="email" style="width:500px; background-color: white;"/>
+                            <label class="form-label" for="form3Example3" >Email address</label>
+                            </div>
+
+                              <!-- Password input -->
+                              <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control  mb-5 text-start" name="password" [(ngModel)]="password" style="width:500px; background-color: white;"/>
+                                <label class="form-label" for="form3Example4">Password</label>
+                              </div>
+
+
+                                <div class="form-outline mb-4">
+                                  <input type="password" id="form3Example4" class="form-control mb-5 text-start   " name="Confirm Password" [(ngModel)]="cpassword" style="width:500px; background-color: white;"/>
+                                  <label class="form-label" for="form3Example4">Confirm Password</label>
+                             
+                              </div>
+
+                                <!-- Submit button -->
+                              </div> </div>
+                                <button  class="btn btn-outline-light  btn-block mb-3 btn-rounded" type="submit" (click)="register()">
+                                 Register
+                                </button>
+                                
+                              
+                                <div style="color: rgb(254, 254, 254);" class="justify-content-start">Have Account ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <button  class="btn btn-outline-light btn-rounded justify-content-end"  routerLink="/SLogin">Login</button>
+                        
+                                </div>
+                            </form>
+                     
+              </section></div></div></div></div></div>
+<!-- Default form register -->

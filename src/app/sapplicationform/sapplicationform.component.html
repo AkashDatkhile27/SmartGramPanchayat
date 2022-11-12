@@ -1,0 +1,165 @@
+<header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 65px;
+      }
+  
+      .carousel-item:nth-child(1) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+  
+      
+  
+     
+  
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+  
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+  </header>
+    <!-- Navbar -->
+   
+  
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <!-- <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+       
+      </ol>
+  -->
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.792);">
+            
+          </div>
+        </div>
+  
+        <!-- Single item -->
+       
+  
+        <!-- Single item -->
+  
+      </div>
+      <!-- Inner -->
+  
+      <!-- Controls -->
+     
+    </div>
+  
+<form #form="ngForm" (ngSubmit)="submit(form.value)">
+<h1> <Marquee >Scheme Registaration Form </Marquee></h1>
+        <div class="container"> 
+         <div class="row">
+                <div class="col-10">
+                    <label for="name"> Name:</label>
+                </div>
+                    <div class="col-90">
+                    <input type="text" id="name" ngModel name="name" placeholder="Enter your full name" required="" >
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" ngModel name="email" placeholder="it should contain @,." required="" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="mobile" ngModel name="mobile" placeholder="only 10 digits are allowed" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required=""  name="Gender">Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male"  value="male" ngModel name="Gender" />Male
+                    <input type="radio" id="female"  value="female" ngModel name="Gender"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                 <input type="date" id="dob" ngModel  name="dob" required="" >   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" ngModel  id="address" cols="30" rows="10" required="" ></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" ngModel  name="city" maxlength="10" required="" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" ngModel name="pin" maxlength="6" required=""> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state"  ngModel name="state" required="" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="Scheme" required="" name="Scheme" >Available Scheme:</label>
+                </div>
+                <div class="col-90">
+                   
+                    <select class="custom-select" id="inputschoolname"  ngModel name="Scheme"      
+       
+      >
+      <option value="">Select Scheme To Apply</option>
+      <option *ngFor="let sn of scheme"  >{{sn}}</option>
+     </select>
+                </div>
+            </div>
+            
+           <br>
+            <div class="row">
+          <input type="submit" value="Apply">
+           <!--onclick="SchemeDetails()-->
+            </div>  
+        </div>  
+       </form>
+       
+ 

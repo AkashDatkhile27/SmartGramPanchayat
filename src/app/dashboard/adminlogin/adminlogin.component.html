@@ -1,0 +1,89 @@
+<!-- <mdb-card>
+    <mdb-card-body class="mx-4">
+<form class="text-center border border-light p-5">
+    <p class="h4 mb-4">Admin Login</p> -->
+    <!-- Email -->
+    <!-- <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" name="email"  [(ngModel)]="email"> -->
+    <!-- Password -->
+    <!-- <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" name="password" [(ngModel)]="password">
+    <div class="d-flex justify-content-around">
+     
+      <div> -->
+        <!-- Forgot password -->
+        <!-- <a href="">Forgot password?</a>
+      </div>
+    </div> -->
+    <!-- Sign in button -->
+    <!-- <button mdbBtn color="info" block="true" class="my-4" routerLink="/SLogin">Register</button> -->
+
+    <!-- <button mdbBtn color="info" block="true" class="my-4" type="submit" (click)=" login()">Log in</button> -->
+   
+  <!-- </form> -->
+  <style>
+    /* Carousel styling */
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #introCarousel {
+        margin-top: -58.59px;
+      }
+    }
+
+  
+  </style>
+
+  
+
+  <!-- Carousel wrapper -->
+  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+    </ol>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-color: rgba(245, 244, 244, 0.142);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+             <section class="mb-5" >
+            
+                  <h1 class="mb-5 text-center" style="color:red;"><strong>Admin Login</strong></h1>
+                    
+                          <form>
+                            <div class="row d-flex justify-content-start">
+                              <div class="col-md-6">
+                             <!-- Email input -->
+                            <div class="form-outline mb-4">
+                            <input type="email" id="form3Example3" class="form-control mb-5 text-start" name="email" [(ngModel)]="email" style="width:500px; background-color: white;"/>
+                            <label class="form-label" for="form3Example3">Email address</label>
+                            </div>
+
+                              <!-- Password input -->
+                              <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control" name="password" [(ngModel)]="password" style="width:500px; background-color: white;"/>
+                                <label class="form-label" for="form3Example4">Password</label>
+                              </div>
+
+                            </div> </div>
+                                <!-- Submit button -->
+                                <button  class="btn btn-primary btn-block mb-4" type="submit" (click)=" login()">
+                                  Login
+                                </button>
+                            </form>
+                     
+              </section></div></div></div></div></div>
